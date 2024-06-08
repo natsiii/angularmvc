@@ -1,0 +1,11 @@
+<div *ngIf="showModal" class="cookies-modal">
+  <div class="modal-content">
+    <h2>{{ "cookiesTitle" | transloco }}</h2>
+    <p>
+      {{ "cookiesContent" | transloco }}
+    </p>
+    <button (click)="acceptCookies()" class="btn">
+      {{ "cookiesAccept" | transloco }}
+    </button>
+  </div>
+</div>

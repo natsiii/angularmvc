@@ -1,0 +1,8 @@
+<div class="language-selector">
+  <button
+    *ngFor="let language of languagesList; index as i"
+    (click)="changeLanguage(language.code)"
+  >
+    <span> {{ language.shorthand }} </span>
+  </button>
+</div>

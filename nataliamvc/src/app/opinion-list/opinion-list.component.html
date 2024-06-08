@@ -1,0 +1,8 @@
+<div *ngIf="isLoading">Loading...</div>
+<div *ngIf="error">{{ error }}</div>
+<ul *ngIf="!isLoading && !error" class="opinion-list">
+  <li *ngFor="let opinion of opinions">
+    <h3>{{ opinion.name }} - {{ opinion.rate }}</h3>
+    <p>{{ opinion.content }}</p>
+  </li>
+</ul>

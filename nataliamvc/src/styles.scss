@@ -1,0 +1,71 @@
+.opinion-form {
+    label {
+        display: block;
+        margin-top: 18px;
+        margin-bottom: 8px;
+    }
+
+    input,
+    textarea,
+    select {
+        border: 1px solid black;
+        border-radius: 8px;
+        padding: 12px;
+    }
+
+    button {
+        display: block;
+        margin-top: 18px;
+    }
+
+    .form-group {
+        padding: 8px;
+
+        &.name,
+        &.rate {
+            display: inline-block;
+        }
+
+        &.name {
+            float: left;
+        }
+    }
+}
+
+.opinion-list {
+    margin: 0;
+    padding: 0;
+    li {
+        list-style-type: none;
+        margin-top: 16px;
+        padding: 16px;
+
+        border: 1px solid black;
+        border-radius: 8px;
+    }
+}
+
+.cookies-modal {
+    width: calc(100% - 48px);
+    max-width: 500px;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 1000;
+    background-color: white;
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.language-selector {
+    margin: 16px;
+
+    button {
+        background-color: none;
+        border: 1px solid black;
+        border-radius: 8px;
+        margin-right: 8px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,111 @@
+<section>
+  <h2>{{ "section1.hello" | transloco }}</h2>
+  <div class="section-content two-columns">
+    <div>
+      {{ "section1.text1" | transloco }}
+    </div>
+    <div>
+      <div class="skill-box">
+        <div class="skill-box__header">
+          <p class="skill-box__title">HTML & CSS</p>
+          <p class="skill-box__value">90%</p>
+        </div>
+        <div class="skill-box__level" style="--level: 90%"></div>
+      </div>
+      <div class="skill-box">
+        <div class="skill-box__header">
+          <p class="skill-box__title">JavaScript</p>
+          <p class="skill-box__value">60%</p>
+        </div>
+        <div class="skill-box__level" style="--level: 60%"></div>
+      </div>
+      <div class="skill-box">
+        <div class="skill-box__header">
+          <p class="skill-box__title">Wordpress</p>
+          <p class="skill-box__value">75%</p>
+        </div>
+        <div class="skill-box__level" style="--level: 75%"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-gray">
+  <h2>{{ "experience.title" | transloco }}</h2>
+  <div class="section-content">
+    <div class="experience-box">
+      <div class="experience-box__date">
+        <p class="experience-box__years">{{ "twoyears" | transloco }}</p>
+        <p class="experience-box__range">2022 - {{ "now" | transloco }}</p>
+      </div>
+      <div class="experience-box__content current">
+        <p class="experience-box__title">{{ "jobtitle" | transloco }}</p>
+        <p class="experience-box__description">
+          {{ "job1desc" | transloco }}
+        </p>
+      </div>
+    </div>
+    <div class="experience-box">
+      <div class="experience-box__date">
+        <p class="experience-box__years">{{ "threeyears" | transloco }}</p>
+        <p class="experience-box__range">2019 - 2022</p>
+      </div>
+      <div class="experience-box__content">
+        <p class="experience-box__title">{{ "jobtitle" | transloco }}</p>
+        <p class="experience-box__description">
+          {{ "job1desc" | transloco }}
+        </p>
+      </div>
+    </div>
+    <div class="experience-box">
+      <div class="experience-box__date">
+        <p class="experience-box__years">{{ "twoyears" | transloco }}</p>
+        <p class="experience-box__range">2017 - 2019</p>
+      </div>
+      <div class="experience-box__content">
+        <p class="experience-box__title">{{ "jobtitle" | transloco }}</p>
+        <p class="experience-box__description">
+          {{ "job1desc" | transloco }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <h2>{{ "opinions" | transloco }}</h2>
+  <div class="section-content">
+    <app-opinion-form></app-opinion-form>
+    <app-opinion-list></app-opinion-list>
+  </div>
+</section>
+<section>
+  <h2>{{ "myprojects" | transloco }}</h2>
+
+  <div class="section-content two-columns">
+    <div>
+      <div
+        class="project-box project-box--big"
+        style="--bg-img: url('../assets/kwiat1.jpg')"
+      >
+        {{ "projectname" | transloco }}
+      </div>
+      <div
+        class="project-box project-box--big"
+        style="--bg-img: url('../assets/kwiat1.jpg')"
+      >
+        {{ "projectname" | transloco }}
+      </div>
+    </div>
+    <div>
+      <div class="project-box" style="--bg-img: url('../assets/kwiat1.jpg')">
+        {{ "projectname" | transloco }}
+      </div>
+      <div class="project-box" style="--bg-img: url('../assets/kwiat1.jpg')">
+        {{ "projectname" | transloco }}
+      </div>
+      <div class="project-box" style="--bg-img: url('../assets/kwiat1.jpg')">
+        {{ "projectname" | transloco }}
+      </div>
+    </div>
+  </div>
+</section>
